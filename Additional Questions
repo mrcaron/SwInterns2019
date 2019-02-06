@@ -1,21 +1,34 @@
 Prompts:
 •	I say "Agile", you think...
-A software development strategy that focuses on rapid development and continuous delivery practices. An agile approach puts emphasis on code modularity and flexibility for further development.
+A software development strategy that focuses on rapid development and continuous delivery practices. 
+An agile approach puts emphasis on code modularity and flexibility for further development.
 
 •	I say "DevOps", you think...
-DevOps is a development strategy that combines software development and IT operations in order to shorten the time between code development and deployment. This strategy often includes automated testing and deployment. 
+DevOps is a development strategy that combines software development and IT operations in order to shorten the time 
+between code development and deployment. This strategy often includes automated testing and deployment. 
 
 •	I say "C++", you think...
-C++ is an extension of the C language, although C++ is an object oriented language unlike C. C++ is often used in embedded firmware.
+C++ is an extension of the C language, although C++ is an object oriented language unlike C. C++ is often used in 
+embedded firmware.
 
 •	I say "Internship", you think...
-An internship is a 2-3 month trial of working at a company. This is an opportunity to develop professional and technical skills, as well as prove yourself valuable to the company in hopes of possibly returning as a full-time employee.
+An internship is a 2-3 month trial of working at a company. This is an opportunity to develop professional and 
+technical skills, as well as prove yourself valuable to the company in hopes of possibly returning as a full-time employee.
 
 •	What are some programming pet peeves you have?
-My biggest pet peeve is having to repeat searches for different technologies’ usage and syntax. One way I minimize this is by taking detailed notes with examples as I learn a new language or technology. For example, notes on file input/output in Java or Python, functions in Julia, etc.
+My biggest pet peeve is having to repeat searches for different technologies’ usage and syntax. One way I minimize this 
+is by taking detailed notes with examples as I learn a new language or technology. For example, notes on file input/output 
+in Java or Python, functions in Julia, etc.
 
 •	Tell us about the people who've influenced your programming.
-My research mentor at the UW-Madison Spatial Automation Lab, Yaqi, has had the largest influence on my programming. I was working on a Java program that can simulate the printing process of a CNC 3D printer based on an input G-Code file, or alternatively produce a G-Code file to manufacture a user defined part. After delivering my first program, Yaqi pointed out many opportunities to increase modularity within my code. As a beginner programmer, Yaqi emphasized the importance of well-documented and intuitive code. 
+My research mentor at the UW-Madison Spatial Automation Lab, Yaqi, has had the largest influence on my programming. 
+I was working on a Java program that can simulate the printing process of a CNC 3D printer based on an input G-Code file, 
+or alternatively produce a G-Code file to manufacture a user defined part. After delivering my first program, 
+Yaqi pointed out many opportunities to increase modularity within my code. As a beginner programmer, Yaqi emphasized 
+the importance of well-documented and intuitive code. 
 
 •	Tell us why you think you'd make an awesome addition to our team.
-I believe that my unique technical skills as well as my affinity for problem solving would make me a great addition to the SOLIDWORKS team. Due to my Mechanical Engineering background, I have developed a good understanding of SOLIDWORKS modeling products and a deep respect for the company. I am excited by new technologies and readily accept new challenges. My strong attention to detail and organizational skills are especially relevant to the Tools Developer Position.
+I believe that my unique technical skills as well as my affinity for problem solving would make me a great addition to 
+the SOLIDWORKS team. Due to my Mechanical Engineering background, I have developed a good understanding of SOLIDWORKS modeling 
+products and a deep respect for the company. I am excited by new technologies and readily accept new challenges. 
+My strong attention to detail and organizational skills are especially relevant to the Tools Developer Position.
