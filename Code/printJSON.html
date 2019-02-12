@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Printing JSON object attributes and its values....</p>
+
+<p id="print"></p>
+
+<script>
+
+var obj = {"name":"Prashanth", "age":22};
+for (i in obj)
+  document.getElementById("print").innerHTML += i + ":" + obj[i] + "<br>";
+
+</script>
+
+</body>
+</html>
