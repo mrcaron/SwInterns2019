@@ -11,13 +11,6 @@ def split(s, c):
     temp = s.split(c)
     print(temp)
 
-# Split a string into parts based off a given character
-def withoutSplit(s, c):
-    while c in s:
-        print(s[0:s.index(c)])
-        s = s[s.index(c)+1:]
-    print(s)
-
 # Find the 5th character of a string that has length > 5            
 def findFifthCharOfStriing(s):
     if(len(s)>=5):
