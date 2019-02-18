@@ -1,6 +1,6 @@
 ## Additional Questions:
 
-1. I say "Agile", you think...
+### 1. I say "Agile", you think...
 
     A methodology that defines the software development life cycle of an application that includes brainstorming ideas 
     and requirements, development and testing.
