@@ -11,6 +11,9 @@ namespace ModString
     {
         private static int DivideLength = 40;
         private static char DivideChar = '-';
+        private static char[] charsToRemove = new char[] { ' ', '\t', '.', '"', '!', }; //TODO add more punctuation
+
+        private static bool showPrompt = true;
 
         static void Main(string[] args)
         {
@@ -32,19 +35,24 @@ namespace ModString
                             RunPalindromeCheck(filePath);
                             break;
                         case 's':
-                            RunSplitStringsOnChar(filePath);
+                            RunSplitStringOnChar(filePath);
                             break;
 
                         case '5':
-
+                            RunFindFifthChar(filePath);
                             break;
 
                         case 'r':
-
+                            RunReverseString(filePath);
                             break;
 
                         case 't':
+                            showPrompt = !showPrompt;
 
+                            if (!showPrompt)
+                            {
+                                WriteLine("Prompt has been turned off. Use 't' to turn it back on.");
+                            }
                             break;
 
                         case 'f':
@@ -77,13 +85,16 @@ namespace ModString
             WriteLine(filePath);
             WriteLine("");
 
-            WriteLine(" p : Check for palindrome strings");
-            WriteLine(" s : Split each string on a given character");
-            WriteLine(" 5 : Find 5th character of each string that has length > 5");
-            WriteLine(" r : Reverse each string");
-            WriteLine(" t : Turn off prompt");
-            WriteLine(" f : Change input file path");
-            WriteLine(" q : Quit");
+            if (showPrompt)
+            {
+                WriteLine(" p : Check for palindrome strings");
+                WriteLine(" s : Split each string on a given character");
+                WriteLine(" 5 : Find 5th character of each string that has length > 5");
+                WriteLine(" r : Reverse each string");
+                WriteLine(" t : Turn off prompt");
+                WriteLine(" f : Change input file path");
+                WriteLine(" q : Quit");
+            }
 
             WriteLine(stringBuilder.ToString());
 
@@ -93,19 +104,6 @@ namespace ModString
         {
             Console.Out.WriteLine(inputString);
         }
-
-        //private static StreamReader OpenFile(string filePath)
-        //{
-        //    try
-        //    {
-        //        StreamReader sr = File.OpenText(filePath);
-        //        return sr;
-        //    } catch (Exception ex)
-        //    {
-        //        WriteLine("Failed to open " + filePath);
-        //        return null;
-        //    }
-        //}
 
         private static bool CheckPalindrome(string inputString)
         {
@@ -129,7 +127,7 @@ namespace ModString
                 string currentLine;
                 while ((currentLine = sr.ReadLine()) != null)
                 {
-                    string[] wordArray = currentLine.Split(new char[] { ' ', '\t', '.', '"', '!', }, StringSplitOptions.RemoveEmptyEntries); //TODO add more puncuation
+                    string[] wordArray = currentLine.Split(charsToRemove, StringSplitOptions.RemoveEmptyEntries); //TODO add more puncuation
                     foreach (string word in wordArray) {
                         if (CheckPalindrome(word))
                         {
@@ -151,18 +149,16 @@ namespace ModString
                     }
                 }
             }
-
             WriteLine("");
-            
         }
 
-        private static void RunSplitStringsOnChar(string filePath)
+        private static void RunSplitStringOnChar(string filePath)
         {
             Console.Out.Write("Enter character to split text on: ");
             char splitChar = Console.ReadKey().KeyChar;
             WriteLine("");
 
-            WriteLine("File split on '" + splitChar + "'");
+            WriteLine("File split on '" + splitChar + "':");
             using (StreamReader sr = File.OpenText(filePath))
             {
                 string currentLine;
@@ -172,6 +168,60 @@ namespace ModString
                     foreach (string phrase in wordArray)
                     {
                         Console.Out.Write(" " + phrase);
+                    }
+                    WriteLine("");
+                }
+            }
+        }
+
+        private static void RunFindFifthChar(string filePath)
+        {
+            WriteLine("Every 5th character in every word longer than 5 characters:");
+            using (StreamReader sr = File.OpenText(filePath))
+            {
+                string currentLine;
+                while ((currentLine = sr.ReadLine()) != null)
+                {
+                    string[] wordArray = currentLine.Split(charsToRemove, StringSplitOptions.RemoveEmptyEntries);
+                    foreach (string word in wordArray)
+                    {
+                        if (word.Length > 5)
+                        {
+                            Console.Out.Write(" " + word[4]); //TODO State assumptions
+                        }
+                    }
+                    WriteLine("");
+                }
+            }
+        }
+
+        private static string ReverseString(string inputString)
+        {
+            char[] charArray = inputString.ToCharArray(); //Strings immutable. Use array
+            //charArray.Reverse
+            char temp;
+            for (int i = 0; i < charArray.Length/2; i++)
+            {
+                temp = charArray[i];
+                charArray[i] = charArray[(charArray.Length - 1) - i];
+                charArray[(charArray.Length - 1) - i] = temp;
+            }
+
+            return new string(charArray);
+        }
+
+        private static void RunReverseString(string filePath)
+        {
+            WriteLine("Every word reversed:");
+            using (StreamReader sr = File.OpenText(filePath))
+            {
+                string currentLine;
+                while ((currentLine = sr.ReadLine()) != null)
+                {
+                    string[] wordArray = currentLine.Split(charsToRemove, StringSplitOptions.RemoveEmptyEntries);
+                    foreach (string word in wordArray)
+                    {
+                        Console.Out.Write(" " + ReverseString(word));
                     }
                     WriteLine("");
                 }
@@ -192,24 +242,6 @@ namespace ModString
             }
 
             return newFilePath;
-
-            //if (File.Exists(inputString))
-            //{
-            //    try
-            //    {
-            //        StreamReader sr = File.OpenText(inputString);
-            //        sr.Close();
-            //        return true;
-            //    } catch (Exception ex)
-            //    {
-            //        WriteLine(ex.Message);
-            //        return false;
-            //    }
-            //}
-            //else
-            //{
-            //    return false;
-            //}
         }
     }
 }
