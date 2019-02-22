@@ -1,0 +1,17 @@
+## Additional Questions
+
+* You say "Agile", I think... Dynamic development. To me, agile software development means quickly and efficiently incorporating customer requests and feedback into your      product instead of starting the project with a rigid set of specifications and building exactly what has been defined regardless of the opinions of the customers. You need      to be careful about feature creep and hastily added code, but if a company can successful adhere to agile principles, the customer will be much happier as a result.
+
+* You say "DevOps", I think... Better internal communication. In all honesty, I have only learned about DevOps just recently. My current understanding is that DevOps involves   much closer communication between the and operations departments to the point of them becoming a single unit. This seems like an all around-good idea, but I have little to no experience in what this would actually look like in practice. The company I worked at previously was small enough that developers were responsible for almost everything technology related.
+
+* You say "C++", I think... Fascinating projects. I haven't had a ton of experience in C++, but in my experience thus far, I think it's going to end up being one of my favorite programming languages. If the language of choice for a project is C++ instead of any number of easier, higher-level languages, I would expect the bulk of the project to be spent on lower level data manipulation rather than constraining user input or tweaking the user interface. Figuratively speaking, I'd much rather work on the engine of a car than the paint job.
+
+* You say "Internship", I think... An exciting, mutually beneficial opportunity. The company gets new, enthused, and energetic workers that have genuine skills and are willing to work for less than a normal employee and the intern gets invaluable real-world work experience while developing skills in an exciting and engaging environment. It allows interns to try out companies and companies to try out potential employees. Win win.
+
+* What are some programming pet peeves you have? Besides the obvious (maintaining obfuscated spaghetti or blatantly inconsistent formatting), I would have to say spending time fixing broken dependencies instead of actually programming. I love Visual Studio, but I feel like I've spent too much of my life trying to nurse mangled dependency lists back to life.
+
+* Tell us about the people who've influenced your programming.
+    My father has been the biggest influence by far. He has really gone above and beyond in sharing his knowledge with me. Neither of my parents pushed me towards computer science, but after I expressed a great deal of interest at a young age, my father was incredibly helpful and encouraging. We still spend a good deal of our free time discussing various computer related topics. My co-workers at my previous job have also helped me a great deal by giving me tips and new ideas to improve my programming. They were always up for a technical discussion about various paradigms or technologies.
+
+* Tell us why you think you'd make an awesome addition to our team.
+    I think I'd be an awesome addition to your team because of my enthusiasm for computer science and my ability to solve complex problems. I know my way around multiple languages and environments and have taught myself how to use numerous development technologies. I enjoy solving complex problems and would love to be able to do it in a professional setting alongside sharp, like-minded people. 
