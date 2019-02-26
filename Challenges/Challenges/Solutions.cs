@@ -11,7 +11,8 @@ namespace Challenges
 
         public string[] split(string s, char c)
         {
-            throw new System.NotImplementedException();
+            // Don't reinvent the wheel
+            return s.Split(new char[] {c});
         }
 
         public char fifthChar(string s)
