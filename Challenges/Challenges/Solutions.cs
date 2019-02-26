@@ -34,7 +34,11 @@ namespace Challenges
 
         public char fifthChar(string s)
         {
-            throw new System.NotImplementedException();
+            if(s == null || s.Length < 5)
+                throw new ArgumentException("s must be five characters or longer");
+
+            // Once again, we're not 0 indexing
+            return s[4];
         }
 
         public string reverse(string s)
