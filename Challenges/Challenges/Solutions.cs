@@ -6,7 +6,24 @@ namespace Challenges
     {
         public bool isPalindrome(string s)
         {
-            throw new System.NotImplementedException();
+            s = s.ToLower();
+            s = s.Trim();
+
+            int index;
+            while ((index = s.IndexOf(' ')) > 0)
+            {
+                s = s.Substring(0, index) + s.Substring(index + 1);
+            }
+
+            int check = 0;
+            while (check < s.Length / 2)
+            {
+                if (s[check] != s[s.Length - 1 - check])
+                    return false;
+                check++;
+            }
+
+            return true;
         }
 
         public string[] split(string s, char c)

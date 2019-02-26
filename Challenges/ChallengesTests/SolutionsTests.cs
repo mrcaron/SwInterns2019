@@ -15,13 +15,19 @@ namespace Challenges.Tests
             //We assume that we can ignore case
             Assert.AreEqual(true, s.isPalindrome("Noon"));
 
+            //Test odd word lengths
+            Assert.AreEqual(true, s.isPalindrome("Bob"));
+
             //We assume that single letter words are palindromes
             Assert.AreEqual(true, s.isPalindrome("a"));
 
             //We assume spaces are ignored
             Assert.AreEqual(true, s.isPalindrome("Race Car"));
+            Assert.AreEqual(true, s.isPalindrome(" Race Car"));
+            Assert.AreEqual(true, s.isPalindrome("Race Car "));
 
             Assert.AreEqual(false, s.isPalindrome("not a palindrome"));
+            Assert.AreEqual(false, s.isPalindrome("blab"));
         }
 
         [TestMethod()]
