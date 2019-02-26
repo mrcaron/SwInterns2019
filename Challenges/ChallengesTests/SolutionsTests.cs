@@ -31,7 +31,7 @@ namespace Challenges.Tests
         }
 
         [TestMethod()]
-        [ExpectedException(typeof(StackOverflowException))]
+        [ExpectedException(typeof(Exception))]
         public void crashTest()
         {
             ISolution s = new Solutions();

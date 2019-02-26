@@ -44,7 +44,7 @@ namespace Challenges
 
         public void crash()
         {
-            throw new System.NotImplementedException();
+            throw new Exception("Don't catch this exception!");
         }
     }
 }
