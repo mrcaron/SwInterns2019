@@ -1,4 +1,6 @@
-﻿namespace Challenges
+﻿using System;
+
+namespace Challenges
 {
     public class Solutions : ISolution
     {

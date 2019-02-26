@@ -3,3 +3,4 @@ Challenges/.vs
 **/obj
 **/packages
 **/*.user
+**/bin

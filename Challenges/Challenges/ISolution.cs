@@ -1,6 +1,8 @@
-﻿namespace Challenges
+﻿using System;
+
+namespace Challenges
 {
-    interface ISolution
+    public interface ISolution
     {
         bool isPalindrome(string s);
         string[] split(string s, char c);
