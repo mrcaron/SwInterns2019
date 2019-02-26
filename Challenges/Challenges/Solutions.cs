@@ -6,15 +6,21 @@ namespace Challenges
     {
         public bool isPalindrome(string s)
         {
-            s = s.ToLower();
-            s = s.Trim();
+            if (s == null)
+                throw new ArgumentException("s cannot be null");
 
+            // Assume caps an leading / trailing spaces are ignored
+            s = s.Trim();
+            s = s.ToLower();
+
+            // Remove spaces
             int index;
             while ((index = s.IndexOf(' ')) > 0)
             {
                 s = s.Substring(0, index) + s.Substring(index + 1);
             }
 
+            // Compare the first char to the last, working our way to the middle
             int check = 0;
             while (check < s.Length / 2)
             {
@@ -28,6 +34,9 @@ namespace Challenges
 
         public string[] split(string s, char c)
         {
+            if (s == null)
+                throw new ArgumentException("s cannot be null");
+
             // Don't reinvent the wheel
             return s.Split(new char[] {c});
         }
@@ -48,6 +57,7 @@ namespace Challenges
 
         public void crash()
         {
+            // Any uncaught exception is fine
             throw new Exception("Don't catch this exception!");
         }
     }
