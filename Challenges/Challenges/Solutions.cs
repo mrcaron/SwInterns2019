@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 
 namespace Challenges
 {
@@ -10,7 +9,7 @@ namespace Challenges
             if (s == null)
                 throw new ArgumentException("s cannot be null");
 
-            // Assume caps an leading / trailing spaces are ignored
+            // Assume caps and spaces are ignored
             s = s.Trim();
             s = s.ToLower();
 

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Challenges
+﻿namespace Challenges
 {
     public interface ISolution
     {

@@ -44,14 +44,14 @@ namespace Challenges.Tests
             ISolution s = new Solutions();
 
             // Basic Test
-            CollectionAssert.AreEqual(new string[] {"two", "words"}, s.split("two words",' '));
+            CollectionAssert.AreEqual(new[] {"two", "words"}, s.split("two words",' '));
 
             // Test no split
-            CollectionAssert.AreEqual(new string[] { "no splitting" }, s.split("no splitting", 'u'));
+            CollectionAssert.AreEqual(new[] { "no splitting" }, s.split("no splitting", 'u'));
 
             // Test multiple splits.  We assume empty strings are returned if the splitting character
             // is found at the beginning or end of a string
-            CollectionAssert.AreEqual(new string[] { "M", "ss", "ss", "pp", "" }, s.split("Mississippi", 'i'));
+            CollectionAssert.AreEqual(new[] { "M", "ss", "ss", "pp", "" }, s.split("Mississippi", 'i'));
         }
 
         [TestMethod()]
