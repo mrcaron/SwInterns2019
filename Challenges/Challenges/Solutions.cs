@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Challenges
 {
@@ -52,7 +53,18 @@ namespace Challenges
 
         public string reverse(string s)
         {
-            throw new System.NotImplementedException();
+            if(s == null)
+                throw new ArgumentException("s cannot be null");
+
+            char[] chars = s.ToCharArray();
+            for (int i = 0; i < chars.Length / 2; i++)
+            {
+                char temp = chars[i];
+                chars[i] = chars[chars.Length - 1 - i];
+                chars[chars.Length - 1 - i] = temp;
+            }
+
+            return new string(chars);
         }
 
         public void crash()
