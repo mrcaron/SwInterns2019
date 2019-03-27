@@ -4,7 +4,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-public class Edward_Fulton_SOLIDWORKS_CODE {
+public class Edward_Fulton_example_code {
 
 	public static void main(String[] args) throws InterruptedException, IOException, URISyntaxException {
 		// TODO Auto-generated method stub
@@ -12,7 +12,7 @@ public class Edward_Fulton_SOLIDWORKS_CODE {
 		 * under some time pressure with some commitments in my 
 		 * academic program (I am studying abroad in Singapore so am a bit disconnected! 
 		 * I will still be in Madison and available to work this summer!).
-		 * This program completes all of the desired specifications you asked for plus a few fun 
+		 * This program cdemonstrates a few simple java tricks plus a few fun 
 		 * easter eggs! Enjoy!
 		*/
 		
